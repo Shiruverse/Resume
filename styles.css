@@ -1,0 +1,149 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+/* Header Style */
+.header {
+  background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.header h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 22px;
+}
+
+/* Container  */
+.container {
+  max-width: 4000px;
+  margin: 30px auto 40px; 
+  background: #fff;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #b4b1b1;
+}
+
+.section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #3186f5;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraphs in Sections */
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Skills Section */
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#skills ul li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-left: 4px solid #0052D4;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+#skills ul li:hover {
+  background: #e6f0ff;
+  transform: scale(1.02);
+}
+
+/* Experience, Projects, Education Blocks */
+.job, .project, .education {
+  margin-bottom: 20px;
+}
+
+.job h3, .project h3, .education h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.job p, .project p, .education p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Interactive Hover for Projects */
+.project {
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.project:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Contact Section */
+#contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 36px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+  .container {
+    padding: 20px;
+    margin: -20px 20px 20px;
+  }
+  .section h2 {
+    font-size: 24px;
+  }
+  .section p, #skills ul li {
+    font-size: 16px;
+  }
+}
+a {
+  color: #0052D4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
